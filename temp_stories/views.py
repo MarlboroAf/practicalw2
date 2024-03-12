@@ -14,11 +14,15 @@ def story():
             )
         return mystory
 
+def convert_f_to_c(temp_in_f):
+    converted_t = (temp_in_f - 32) * 0.5556
+    return converted_t
+
 def index(request):
     mystory = story()
     converted_t = None
     temp = None
     if request.method== "POST":
         temp = int(request.POST.get('temp',''))
-        converted_t = (temp-32)*0.5556
+        converted_t = convert_f_to_c(temp)
     return render(request, 'temp_stories/index.html', {'story': mystory, 'converted_t': converted_t, 'temp': temp})
