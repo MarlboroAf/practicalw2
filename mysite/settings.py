@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1kl=9&q#=07=eb&+70-4^ii^gn(ip_he$7guz%x9%ml@6v4+i_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['humandiesel-justicesupport-5000.codio-box.uk', 'localhost']
+ALLOWED_HOSTS = ['humandiesel-justicesupport-5000.codio-box.uk', 'localhost', 'parodypalma-icebergreport-8000.codio-box.uk']
 
 
 # Application definition
